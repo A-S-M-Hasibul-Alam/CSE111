@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class L020208{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a[] = new int[10];
+        
+        int Counter = 0;
+        int Counter2 = 0;
+        for (int count = 0; count < a.length; count++){
+            a[count] = sc.nextInt();
+            Counter = 0;
+            for( int count1 = 0; count1 < count; count1++){
+                 
+                if( a[count] == a[count1] ){
+                    Counter++;
+                }
+                else{
+                }
+                if(Counter >= 1 && Counter <= 4){
+                    Counter2++;
+                }
+                else{
+                }
+            }
+        }
+        System.out.println(Counter2);
+        int b[] = new int[Counter2];
+        int x = 0;
+        for (int count = 0; count < a.length; count++){   
+            for( int count1 = 0; count1 < count; count1++){
+                Counter = 0; 
+                if( a[count] == a[count1] ){
+                    Counter++;
+                }
+                else{
+                }
+                if(Counter >= 1 && Counter <= 4){
+                    b[x] = a[count];
+                    x++;
+                 } 
+                else{
+                }
+            }
+        }
+        for( int c = 0; c < b.length; c++){
+            System.out.println(b[c]);
+        }
+    }
+}
+
+        
+

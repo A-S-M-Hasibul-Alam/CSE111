@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class L0209{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int a[] = new int[10];
+    for ( int count = 0; count < a.length; count++){
+      a[count] = sc.nextInt();
+    }
+    for ( int count = 0; count < a.length; count++){
+      if( count%2 == 0){
+        System.out.print(a[count] + ", ");
+      }
+    }
+  }
+}

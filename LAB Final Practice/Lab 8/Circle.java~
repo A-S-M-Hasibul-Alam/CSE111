@@ -1,0 +1,14 @@
+public class Circle extends Point{
+  Circle(){
+  }
+  Circle(int r){
+    getRadius(r);
+  }
+  double space(){
+    double area  = Math.PI*getRadius()*getRadius();
+    return area;
+  }
+  String toString(){
+    return "Enter radius of a circle: "+getRadius()+"\n"+"Creating a Circle … done!"+"\n"+"The area of the Circle is "+area;
+  }
+}

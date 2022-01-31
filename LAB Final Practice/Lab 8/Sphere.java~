@@ -1,0 +1,14 @@
+public class Sphere extends Point{
+  Sphere(){
+  }
+  Sphere(int r){
+    getRadius(r);
+  }
+  double space(){
+    double area  = 4/3*Math.PI*getRadius()*getRadius()*getRadius();
+    return area;
+  }
+  String toString(){
+    return "Enter radius of a Sphere: "+getRadius()+"\n"+"Creating a Sphere … done!"+"\n"+"The area of the Sphere is "+area;
+  }
+}

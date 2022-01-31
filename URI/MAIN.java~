@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class MAIN{
+  public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+    double r = sc.nextDouble();
+//    double R = ("%.2f", r);
+    System.out.printf("%.2f", r);
+  }
+}
